@@ -30,3 +30,12 @@ imap <c-s> <esc>:w<cr>a
 
 set nowrap
 
+" NERDTree
+map <silent> <leader>n :NERDTreeToggle<CR>
+
+" Window resizing mappings
+map <up> <C-W>-
+map <down> <C-W>+
+map <left> <c-w><
+map <right> <c-w>>
+
