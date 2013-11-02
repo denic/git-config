@@ -4,9 +4,10 @@ Bundle 'scrooloose/syntastic'
 Bundle 'vim-scripts/TabBar'
 Bundle 'myusuf3/numbers.vim'
 Bundle 'tpope/vim-commentary'
-" Bundle 'tpope/vim-surround'
+Bundle 'tpope/vim-surround'
 Bundle 'wincent/Command-T'
 Bundle 'Valloric/YouCompleteMe'
+Bundle 'SirVer/ultisnips'
 
 " insert mode auto-completion for quotes, parens, brackets, etc.
 Bundle 'Raimondi/delimitMate'

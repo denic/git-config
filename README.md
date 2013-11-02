@@ -2,6 +2,13 @@
 
 This ist my personal Vim setup. It is still incomplete and will be finetuned in the future.
 
-## After cloning
+## After/post cloning
 
-* after cloning this repository make sure to install tern by calling "npm install" in bundle/tern_for_vim.
+* Run git submodule init
+* Run vim + BundleInstall
+* Install Tern.js by calling "npm install" in bundle/tern_for_vim.
+* Install YouCompleteMe by calling 
+
+## TODO
+
+* write post cloning installation script

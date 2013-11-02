@@ -1,6 +1,25 @@
 set nocompatible               " be iMproved
 filetype off                   " required!
 
+
+" ########## BUNDLES ##################
+
+"  -- Config
+
+" Configure YouCompleteMe.
+" let g:ycm_add_preview_to_completeopt=0
+" let g:ycm_confirm_extra_conf=0
+" set completeopt-=preview
+
+" Configure Ultisnips.
+let g:UltiSnipsExpandTrigger="<c-j>"
+let g:UltiSnipsJumpForwardTrigger="<c-j>"
+let g:UltiSnipsJumpBackwardTrigger="<c-k>"
+
+let g:UltiSnipsSnippetDirectories=["UltiSnips", "snippets"]
+
+" -- Loading
+
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
@@ -13,7 +32,8 @@ if !exists('g:light_editor')
 	source $HOME/.vim/bundles.vim
 endif
 
-filetype plugin indent on     " required!
+
+" ########## MAPPINGS #################
 
 " change the mapleader from \ to ,
 let mapleader=","
@@ -39,3 +59,5 @@ map <down> <C-W>+
 map <left> <c-w><
 map <right> <c-w>>
 
+" ########## MISC #####################
+filetype plugin indent on

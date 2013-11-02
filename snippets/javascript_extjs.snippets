@@ -1,0 +1,215 @@
+extends javascript
+
+snippet req "Requires array" b
+requires: [
+    $0
+],
+endsnippet
+
+
+snippet cls "Create ExtJS class" !b
+/**
+ * ${2:description}
+ */
+Ext.define('${1:`!p snip.rv = get_classname(path)`}', {
+    extend: '$3',
+
+    $0
+});
+endsnippet
+
+
+snippet clsm "Model class" !b
+/**
+ * ${2:description}
+ */
+Ext.define('${1:`!p snip.rv = get_classname(path)`}', {
+    extend: '${3:Ext.data.Model}',
+
+    fields: [
+        $0
+    ]
+});
+endsnippet
+
+
+snippet clsc "Controller class" !b
+/**
+ * ${2:description}
+ */
+Ext.define('${1:`!p snip.rv = get_classname(path)`}', {
+    extend: '${3:${1/^(\w+)\..*/$1/}.controller.base.Composable}',
+
+    init: function(config) {
+        this.callParent([config]);
+
+        $0
+    },
+
+    update: function(contextData) {
+
+    }
+});
+endsnippet
+
+
+
+snippet clscd "Data component controller class" !b
+/**
+ * ${2:description}
+ */
+Ext.define('${1:`!p snip.rv = get_classname(path)`}', {
+    extend: '${1/^(\w+)\..*/$1/}.controller.base.DataComponent',
+
+    requires: [
+        '${1/^(\w+)\..*/$1/}.model.$3'
+    ],
+
+    _getStore: function() {
+        return {
+            model: '${1/^(\w+)\..*/$1/}.model.$3'
+        };
+    },
+
+    _getProxy: function(contextData) {
+        return {
+            type: '${5:ajax}',
+            url: '$6',
+
+            reader: {
+                type: 'json',
+                root: 'records',
+                totalProperty: 'totalRecords'
+            }
+            
+        }; 
+    }
+});
+endsnippet
+
+
+
+snippet clscs "State data component controller class" !b
+/**
+ * ${2:description}
+ */
+Ext.define('${1:`!p snip.rv = get_classname(path)`}', {
+    extend: '${1/^(\w+)\..*/$1/}.controller.base.StateDataComponent',
+
+    requires: [
+        '${3:${1/^(\w+)\..*/$1/}.store.${1/.*\.(\w+)$/$1/}}',
+        '${1/^(\w+)\..*/$1/}.data.proxy.Ajax'
+    ],
+
+    _storeName: '${4:${1/.*\.(\w+)$/$1/}}',
+
+    _stateProps: [
+        $5
+    ],
+
+    _getProxy: function(contextData) {
+        return {
+            type: '${6:`!p snip.rv = get_appname( find_app_path(path) ).lower()`ajax}',
+            url: new Ext.Template(
+                '$7'
+            ).apply(contextData),
+
+            reader: {
+                type: 'json',
+                root: 'records',
+                totalProperty: 'totalRecords'
+            }
+            
+        }; 
+    }
+});
+endsnippet
+
+
+
+snippet clsv "View class" !b
+/**
+ * ${2:description}
+ */
+Ext.define('${1:`!p snip.rv = get_classname(path)`}', {
+    extend: '${3:Ext.panel.Panel}',
+
+    alias: 'widget.${4:xtype}',
+    
+    initComponent: function(){
+        Ext.apply(this, {
+            layout: 'fit',
+            items: [{
+                $0
+            }]
+        });  
+
+        this.callParent(arguments);
+    }
+});
+endsnippet
+
+
+snippet clsvg "Grid class" !b
+/**
+ * ${2:description}
+ */
+Ext.define('${1:`!p snip.rv = get_classname(path)`}', {
+    extend: '${3:Ext.grid.Panel}',
+
+    alias: 'widget.${4:xtype}',
+    
+    initComponent: function(){
+        Ext.apply(this, {
+            columns: [{
+                $0
+            }],
+            dockedItems: [{
+                xtype: 'pagingtoolbar',
+                dock: 'top',
+                displayInfo: true
+            }, {
+                xtype: 'pagingtoolbar',
+                dock: 'bottom',
+                displayInfo: true
+            }]
+        });  
+
+        this.callParent(arguments);
+    },
+
+    /**
+     * Binding store also to paging toolbars.
+     */
+    bindStore: function(store) {
+        this.callParent([store]);       
+
+        Ext.each( 
+            this.query('pagingtoolbar'), 
+            function(item) {
+                item.bindStore(store);
+            }
+        );
+    }
+});
+endsnippet
+
+
+snippet fmt "String format function" i
+Ext.String.format(
+    '$1',
+    $2
+)
+endsnippet
+
+
+snippet test "A Siesta test" !b
+/**
+ * ${1:description}
+ */
+StartTest(function(t) {
+    var devel = TxOne.controller.Devel.instance,
+        ctrl = devel._controller;
+    $0    
+});
+endsnippet
