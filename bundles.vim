@@ -1,4 +1,5 @@
 Bundle 'marijnh/tern_for_vim'
+Bundle 'majutsushi/tagbar'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/syntastic'
 Bundle 'vim-scripts/TabBar'
@@ -11,3 +12,4 @@ Bundle 'SirVer/ultisnips'
 
 " insert mode auto-completion for quotes, parens, brackets, etc.
 Bundle 'Raimondi/delimitMate'
+Bundle 'altercation/vim-colors-solarized'

@@ -32,6 +32,20 @@ if !exists('g:light_editor')
 	source $HOME/.vim/bundles.vim
 endif
 
+" ########## MISC #####################
+
+set hlsearch
+
+colorscheme solarized
+if has('gui_running')
+	set background=light
+else
+	set background=dark
+endif
+
+set autoindent
+set shiftwidth=4
+set tabstop=4
 
 " ########## MAPPINGS #################
 
@@ -61,3 +75,6 @@ map <right> <c-w>>
 
 " ########## MISC #####################
 filetype plugin indent on
+
+set backupdir=~/.vim/backup//
+set directory=~/.vim/swap//
