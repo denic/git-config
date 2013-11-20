@@ -10,6 +10,12 @@ Bundle 'wincent/Command-T'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'SirVer/ultisnips'
 
+" git integration
+Bundle 'tpope/vim-fugitive'
+
 " insert mode auto-completion for quotes, parens, brackets, etc.
 Bundle 'Raimondi/delimitMate'
 Bundle 'altercation/vim-colors-solarized'
+
+" Colorschemes
+Bundle 'nanotech/jellybeans.vim'

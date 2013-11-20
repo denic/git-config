@@ -73,6 +73,9 @@ map <down> <C-W>+
 map <left> <c-w><
 map <right> <c-w>>
 
+" Command-T
+nnoremap <silent> <Leader>, :CommandT<CR>
+
 " ########## MISC #####################
 filetype plugin indent on
 
