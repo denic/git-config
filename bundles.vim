@@ -10,8 +10,12 @@ Bundle 'wincent/Command-T'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'SirVer/ultisnips'
 
+" JS intendation
+Bundle 'vim-scripts/JavaScript-Indent'
+
 " git integration
 Bundle 'tpope/vim-fugitive'
+Bundle 'airblade/vim-gitgutter'
 
 " insert mode auto-completion for quotes, parens, brackets, etc.
 Bundle 'Raimondi/delimitMate'
