@@ -18,6 +18,11 @@ let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 
 let g:UltiSnipsSnippetDirectories=["UltiSnips", "snippets"]
 
+" TagBar
+let g:tagbar_type_javascript = {
+    \ 'ctagsbin' : '/usr/bin/jsctags'
+	\ }
+
 " -- Loading
 
 set rtp+=~/.vim/bundle/vundle/
@@ -75,6 +80,9 @@ map <right> <c-w>>
 
 " Command-T
 nnoremap <silent> <Leader>, :CommandT<CR>
+
+" TagBar
+nmap <F8> :TagbarToggle<CR>
 
 " ########## MISC #####################
 filetype plugin indent on
