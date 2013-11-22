@@ -9,6 +9,7 @@ Bundle 'tpope/vim-surround'
 Bundle 'wincent/Command-T'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'SirVer/ultisnips'
+Bundle 'bling/vim-airline'
 
 " JS intendation
 Bundle 'vim-scripts/JavaScript-Indent'

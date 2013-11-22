@@ -37,6 +37,8 @@ if !exists('g:light_editor')
 	source $HOME/.vim/bundles.vim
 endif
 
+let g:airline_powerline_fonts = 1
+
 " ########## MISC #####################
 
 set hlsearch
@@ -89,3 +91,5 @@ filetype plugin indent on
 
 set backupdir=~/.vim/backup//
 set directory=~/.vim/swap//
+
+set incsearch
