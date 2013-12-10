@@ -43,7 +43,8 @@ let g:airline_powerline_fonts = 1
 
 set hlsearch
 
-colorscheme solarized
+" colorscheme solarized
+colorscheme jellybeans
 if has('gui_running')
 	set background=light
 else
@@ -53,6 +54,7 @@ endif
 set autoindent
 set shiftwidth=4
 set tabstop=4
+set expandtab
 
 " ########## MAPPINGS #################
 

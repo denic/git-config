@@ -24,3 +24,4 @@ Bundle 'altercation/vim-colors-solarized'
 
 " Colorschemes
 Bundle 'nanotech/jellybeans.vim'
+Bundle 'chriskempson/base16-vim'
