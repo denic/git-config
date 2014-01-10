@@ -10,6 +10,7 @@ Bundle 'wincent/Command-T'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'SirVer/ultisnips'
 Bundle 'bling/vim-airline'
+Bundle 'vim-scripts/EasyGrep'
 
 " JS intendation
 Bundle 'vim-scripts/JavaScript-Indent'
@@ -25,3 +26,4 @@ Bundle 'altercation/vim-colors-solarized'
 " Colorschemes
 Bundle 'nanotech/jellybeans.vim'
 Bundle 'chriskempson/base16-vim'
+Bundle 'vim-scripts/Relaxed-Green'
