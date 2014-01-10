@@ -10,7 +10,6 @@ Bundle 'wincent/Command-T'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'SirVer/ultisnips'
 Bundle 'bling/vim-airline'
-Bundle 'vim-scripts/EasyGrep'
 
 " JS intendation
 Bundle 'vim-scripts/JavaScript-Indent'
