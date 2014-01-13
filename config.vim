@@ -44,12 +44,12 @@ let g:airline_powerline_fonts = 1
 set hlsearch
 
 " colorscheme solarized
-colorscheme jellybeans
-if has('gui_running')
-	set background=light
-else
-	set background=dark
-endif
+colorscheme desert
+"if has('gui_running')
+"	set background=light
+"else
+"	set background=dark
+"endif
 
 " set autoindent
 set smartindent
