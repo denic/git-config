@@ -13,6 +13,7 @@ Bundle 'bling/vim-airline'
 
 " JS intendation
 Bundle 'vim-scripts/JavaScript-Indent'
+Bundle 'vim-scripts/JavaScript-syntax'
 
 " git integration
 Bundle 'tpope/vim-fugitive'
@@ -26,3 +27,4 @@ Bundle 'altercation/vim-colors-solarized'
 Bundle 'nanotech/jellybeans.vim'
 Bundle 'chriskempson/base16-vim'
 Bundle 'vim-scripts/Relaxed-Green'
+Bundle 'vim-scripts/summerfruit256.vim'
