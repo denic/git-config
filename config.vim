@@ -44,12 +44,15 @@ let g:airline_powerline_fonts = 1
 set hlsearch
 
 " colorscheme solarized
-colorscheme desert
+colorscheme summerfruit256
 "if has('gui_running')
 "	set background=light
 "else
 "	set background=dark
 "endif
+
+set cursorline
+hi CursorLine term=bold cterm=bold guibg=Grey90
 
 " set autoindent
 set smartindent
