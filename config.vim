@@ -3,6 +3,23 @@ filetype off                   " required!
 
 
 " ########## BUNDLES ##################
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+
+" let Vundle manage Vundle, required! 
+Plugin 'gmarik/Vundle.vim'
+
+" include all of the bundle configuration.
+if !exists('g:light_editor')
+	source $HOME/.vim/bundles.vim
+endif
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
 
 "  -- Config
 
@@ -16,7 +33,7 @@ let g:UltiSnipsExpandTrigger="<c-j>"
 let g:UltiSnipsJumpForwardTrigger="<c-j>"
 let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 
-let g:UltiSnipsSnippetDirectories=["UltiSnips", "snippets"]
+let g:UltiSnipsSnippetDirectories=["UltiSnips"]
 
 " TagBar
 let g:tagbar_type_javascript = {
@@ -25,17 +42,7 @@ let g:tagbar_type_javascript = {
 
 " -- Loading
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
 
-" let Vundle manage Vundle
-" required! 
-Bundle 'gmarik/vundle'
-
-" include all of the bundle configuration.
-if !exists('g:light_editor')
-	source $HOME/.vim/bundles.vim
-endif
 
 let g:airline_powerline_fonts = 1
 
@@ -43,22 +50,23 @@ let g:airline_powerline_fonts = 1
 
 set hlsearch
 
-" colorscheme solarized
-colorscheme summerfruit256
-"if has('gui_running')
-"	set background=light
-"else
-"	set background=dark
-"endif
+if has('gui_running')
+    colorscheme summerfruit256
+	set background=light
+else
+    colorscheme desert
+	set background=dark
+endif
 
 set cursorline
 hi CursorLine term=bold cterm=bold guibg=Grey90
 
-" set autoindent
-set smartindent
+set autoindent
+" set smartindent
 set shiftwidth=4
 set tabstop=4
 set expandtab
+set nowrap
 
 " ########## MAPPINGS #################
 
@@ -74,8 +82,6 @@ map <C-l> <C-w>l
 " save with strg-s
 map <c-s> <esc>:w<cr>
 imap <c-s> <esc>:w<cr>a
-
-set nowrap
 
 " NERDTree
 map <silent> <leader>n :NERDTreeToggle<CR>
@@ -93,14 +99,12 @@ nnoremap <silent> <Leader>, :CommandT<CR>
 nmap <F8> :TagbarToggle<CR>
 
 " ########## MISC #####################
-filetype plugin indent on
-
 set backupdir=~/.vim/backup//
 set directory=~/.vim/swap//
 
 set incsearch
 
-" ########## The Silver Searcher #####################
+" "########## The Silver Searcher #####################
 if executable('ag')
   " Use ag over grep
   set grepprg=ag\ --nogroup\ --nocolor
