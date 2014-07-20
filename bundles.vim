@@ -34,3 +34,6 @@ Plugin 'vim-scripts/summerfruit256.vim'
 Plugin 'rking/ag.vim'
 Plugin 'sickill/vim-monokai'
 Plugin 'vim-scripts/blackdust.vim'
+
+" Golang
+Bundle 'jnwhiteh/vim-golang'
