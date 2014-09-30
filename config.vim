@@ -51,6 +51,7 @@ let g:airline_powerline_fonts = 1
 set hlsearch
 
 if has('gui_running')
+    set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 10
     colorscheme summerfruit256
 	set background=light
 else
