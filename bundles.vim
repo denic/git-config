@@ -8,9 +8,12 @@ Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-surround'
 Plugin 'wincent/Command-T'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'bling/vim-airline'
+
+" Snippets
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
-Plugin 'bling/vim-airline'
+Plugin 'jordwalke/VimJSDocSnippets'
 
 " JS intendation
 " Plugin 'vim-scripts/JavaScript-Indent'

@@ -59,8 +59,13 @@ else
 	set background=dark
 endif
 
+" highlight current line
 set cursorline
 hi CursorLine term=bold cterm=bold guibg=Grey90
+
+" Show wrap line after 101 characters
+set colorcolumn=101
+hi ColorColumn guibg=grey9
 
 set autoindent
 " set smartindent
