@@ -1,12 +1,16 @@
+Plugin 'kien/ctrlp.vim'
+Plugin 'tacahiroy/ctrlp-funky'
+
 Plugin 'marijnh/tern_for_vim'
 Plugin 'majutsushi/tagbar'
-Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
 Plugin 'vim-scripts/TabBar'
+
+Plugin 'wincent/Command-T'
+Plugin 'scrooloose/nerdtree'
 Plugin 'myusuf3/numbers.vim'
 Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-surround'
-Plugin 'wincent/Command-T'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'bling/vim-airline'
 
@@ -27,9 +31,9 @@ Plugin 'airblade/vim-gitgutter'
 
 " insert mode auto-completion for quotes, parens, brackets, etc.
 Plugin 'Raimondi/delimitMate'
-Plugin 'altercation/vim-colors-solarized'
 
 " Colorschemes
+Plugin 'altercation/vim-colors-solarized'
 Plugin 'nanotech/jellybeans.vim'
 Plugin 'chriskempson/base16-vim'
 Plugin 'vim-scripts/Relaxed-Green'
