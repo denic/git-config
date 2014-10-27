@@ -59,8 +59,13 @@ else
 	set background=dark
 endif
 
+" highlight current line
 set cursorline
 hi CursorLine term=bold cterm=bold guibg=Grey90
+
+" Show wrap line after 101 characters
+set colorcolumn=101
+hi ColorColumn guibg=grey9
 
 set autoindent
 " set smartindent
@@ -126,3 +131,9 @@ command -nargs=+ -complete=file -bar Ag silent! grep! <args>|cwindow|redraw!
 " nnoremap \ :Ag<SPACE>
 
 command FormatJSON :%!python -mjson.tool
+
+" let g:ctrlp_extensions = ['funky']
+
+" nnoremap <Leader>fu :CtrlPFunky<Cr>
+" " narrow the list down with a word under cursor
+" nnoremap <Leader>fU :execute 'CtrlPFunky ' . expand('<cword>')<Cr>
