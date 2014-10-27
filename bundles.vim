@@ -37,3 +37,7 @@ Plugin 'vim-scripts/blackdust.vim'
 
 " Golang
 Bundle 'jnwhiteh/vim-golang'
+
+" Elixir-Lang
+Bundle "elixir-lang/vim-elixir"
+Bundle "carlosgaldino/elixir-snippets"
