@@ -42,8 +42,6 @@ let g:tagbar_type_javascript = {
 
 " -- Loading
 
-
-
 let g:airline_powerline_fonts = 1
 
 " ########## MISC #####################
@@ -52,20 +50,21 @@ set hlsearch
 
 if has('gui_running')
     set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 10
-    colorscheme base16-eighties
 	set background=dark
+    colorscheme base16-eighties
+    
+    " Show wrap line after 101 characters
+    set colorcolumn=101
+    hi ColorColumn guibg=grey9
 else
-    colorscheme base16-eighties
 	set background=dark
+    colorscheme desert
 endif
 
 " highlight current line
 set cursorline
 hi CursorLine term=bold cterm=bold guibg=Grey90
 
-" Show wrap line after 101 characters
-set colorcolumn=101
-hi ColorColumn guibg=grey9
 
 set autoindent
 " set smartindent
