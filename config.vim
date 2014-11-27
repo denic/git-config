@@ -52,10 +52,10 @@ set hlsearch
 
 if has('gui_running')
     set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 10
-    colorscheme summerfruit256
-	set background=light
+    colorscheme base16-eighties
+	set background=dark
 else
-    colorscheme desert
+    colorscheme base16-eighties
 	set background=dark
 endif
 
