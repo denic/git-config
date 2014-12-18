@@ -45,6 +45,9 @@ Plugin 'vim-scripts/blackdust.vim'
 " Golang
 Bundle 'jnwhiteh/vim-golang'
 
+" HAProxy
+Bundle 'sclo/haproxy.vim'
+
 " Elixir-Lang
 Bundle "elixir-lang/vim-elixir"
 Bundle "carlosgaldino/elixir-snippets"
