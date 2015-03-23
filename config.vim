@@ -131,8 +131,6 @@ command -nargs=+ -complete=file -bar Ag silent! grep! <args>|cwindow|redraw!
 
 command FormatJSON :%!python -mjson.tool
 
-" let g:ctrlp_extensions = ['funky']
-
-" nnoremap <Leader>fu :CtrlPFunky<Cr>
-" " narrow the list down with a word under cursor
-" nnoremap <Leader>fU :execute 'CtrlPFunky ' . expand('<cword>')<Cr>
+nnoremap <Leader>fu :CtrlPFunky<Cr>
+" narrow the list down with a word under cursor
+nnoremap <Leader>fU :execute 'CtrlPFunky ' . expand('<cword>')<Cr>
