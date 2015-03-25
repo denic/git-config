@@ -15,6 +15,7 @@ This ist my personal Vim setup. It is still incomplete and will be finetuned in 
 
 ### After clone/update
 * tern_for_vim: Install Tern.js by calling "npm install" in bundle/tern_for_vim.
+  * Generate jsdoc definition for your specific framework via https://github.com/angelozerr/tern.jsduck
 * Command-T: For Installation see Commend-T/README
 * Install YouCompleteMe by calling ~/.vim/bundle/YouCompleteMe/install.sh
 * Install https://github.com/Lokaltog/powerline-fonts for vim-airline
@@ -27,3 +28,25 @@ vim :PluginUpdate
 ## TODO
 
 * write post cloning installation script
+
+## MISC
+
+### Example .tern-project
+
+{
+    "libs": [
+        "browser"
+    ],
+    "loadEagerly": [
+        "*,js",
+        "app/pcc/*.js",
+        "app/pcc/*/*.js",
+        "app/pcc/*/*/*.js",
+        "app/pcc/*/*/*/*.js"
+    ],
+    "dontLoad": [
+    ],
+    "plugins": {
+        "extjs_4.2.1": {}
+    }
+}
