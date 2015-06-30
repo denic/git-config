@@ -58,7 +58,7 @@ if has('gui_running')
     hi ColorColumn guibg=grey9
 else
 	set background=dark
-    colorscheme desert
+    colorscheme gruvbox
 endif
 
 " highlight current line
@@ -134,3 +134,5 @@ command FormatJSON :%!python -mjson.tool
 nnoremap <Leader>fu :CtrlPFunky<Cr>
 " narrow the list down with a word under cursor
 nnoremap <Leader>fU :execute 'CtrlPFunky ' . expand('<cword>')<Cr>
+
+nnoremap <leader>. :CtrlPTag<cr>
