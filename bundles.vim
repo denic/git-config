@@ -34,14 +34,16 @@ Plugin 'Raimondi/delimitMate'
 
 " Colorschemes
 Plugin 'altercation/vim-colors-solarized'
-Plugin 'nanotech/jellybeans.vim'
 Plugin 'chriskempson/base16-vim'
-Plugin 'vim-scripts/Relaxed-Green'
-Plugin 'vim-scripts/summerfruit256.vim'
-Plugin 'rking/ag.vim'
-Plugin 'sickill/vim-monokai'
-Plugin 'vim-scripts/blackdust.vim'
+Plugin 'morhetz/gruvbox'
+Plugin 'nanotech/jellybeans.vim'
 Plugin 'noahfrederick/vim-hemisu'
+Plugin 'rking/ag.vim'
+Plugin 'Sclarki/neonwave.vim'
+Plugin 'sickill/vim-monokai'
+Plugin 'vim-scripts/Relaxed-Green'
+Plugin 'vim-scripts/blackdust.vim'
+Plugin 'vim-scripts/summerfruit256.vim'
 
 " Golang
 Bundle 'jnwhiteh/vim-golang'
