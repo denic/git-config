@@ -136,3 +136,6 @@ nnoremap <Leader>fu :CtrlPFunky<Cr>
 nnoremap <Leader>fU :execute 'CtrlPFunky ' . expand('<cword>')<Cr>
 
 nnoremap <leader>. :CtrlPTag<cr>
+
+" LOCAL-VIM-RC: Store and restore decisions only if the answer was given in upper case (Y/N/A).
+let g:localvimrc_persistent=1

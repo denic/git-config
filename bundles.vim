@@ -13,6 +13,7 @@ Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-surround'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'bling/vim-airline'
+Plugin 'embear/vim-localvimrc'
 
 " Snippets
 Plugin 'SirVer/ultisnips'
