@@ -37,7 +37,7 @@ Ext.define('XXX', {
 	extend: 'Ext.ux.data.Store',
 	fields: [],
 	data:[]	
-})
+});
 endsnippet
 
 snippet clsc "Controller class" !b
@@ -47,14 +47,10 @@ snippet clsc "Controller class" !b
 Ext.define('${1:`!p snip.rv = get_classname(path)`}', {
     extend: '${3:${1/^(\w+)\..*/$1/}.controller.base.Composable}',
 
-    init: function(config) {
-        this.callParent([config]);
+	refs: [],
 
-        $0
-    },
-
-    update: function(contextData) {
-
+    init: function() {
+		this.control({});
     }
 });
 endsnippet
