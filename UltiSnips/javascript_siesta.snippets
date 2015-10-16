@@ -1,0 +1,20 @@
+snippet describe "Start a new suite."
+t.describe('$0', function (t){
+});
+endsnippet
+
+snippet it "Start a new spec" !w
+t.it('$0', function (t) {
+});
+endsnippet
+
+snippet starttest "Start a new test"
+describe('$0', function (t) {
+
+	t.it('', function (t) {
+	});
+
+});
+endsnippet
+
+
