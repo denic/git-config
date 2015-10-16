@@ -1,5 +1,7 @@
+Plugin 'rking/ag.vim'
 Plugin 'kien/ctrlp.vim'
 Plugin 'tacahiroy/ctrlp-funky'
+Plugin 'valloric/MatchTagAlways'
 
 Plugin 'marijnh/tern_for_vim'
 Plugin 'majutsushi/tagbar'
@@ -14,6 +16,8 @@ Plugin 'tpope/vim-surround'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'bling/vim-airline'
 Plugin 'embear/vim-localvimrc'
+
+Plugin 'groenewege/vim-less'
 
 " Snippets
 Plugin 'SirVer/ultisnips'
@@ -34,13 +38,13 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'Raimondi/delimitMate'
 
 " Colorschemes
+Plugin 'Sclarki/neonwave.vim'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'chriskempson/base16-vim'
+Plugin 'ciaranm/inkpot'
 Plugin 'morhetz/gruvbox'
 Plugin 'nanotech/jellybeans.vim'
 Plugin 'noahfrederick/vim-hemisu'
-Plugin 'rking/ag.vim'
-Plugin 'Sclarki/neonwave.vim'
 Plugin 'sickill/vim-monokai'
 Plugin 'vim-scripts/Relaxed-Green'
 Plugin 'vim-scripts/blackdust.vim'

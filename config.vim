@@ -51,14 +51,14 @@ set hlsearch
 if has('gui_running')
     set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 10
 	set background=dark
-    colorscheme gruvbox 
+    colorscheme inkpot 
     
     " Show wrap line after 101 characters
     set colorcolumn=101
     hi ColorColumn guibg=grey9
 else
 	set background=dark
-    colorscheme gruvbox
+    colorscheme inkpot 
 endif
 
 " highlight current line
