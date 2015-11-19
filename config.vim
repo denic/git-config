@@ -56,6 +56,7 @@ if has('gui_running')
     " Show wrap line after 101 characters
     set colorcolumn=101
     hi ColorColumn guibg=grey9
+    set go-=m
 else
 	set background=dark
     colorscheme jellybeans
