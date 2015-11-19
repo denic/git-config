@@ -58,7 +58,7 @@ if has('gui_running')
     hi ColorColumn guibg=grey9
 else
 	set background=dark
-    colorscheme inkpot 
+    colorscheme jellybeans
 endif
 
 " highlight current line
