@@ -49,6 +49,7 @@ Plugin 'sickill/vim-monokai'
 Plugin 'vim-scripts/Relaxed-Green'
 Plugin 'vim-scripts/blackdust.vim'
 Plugin 'vim-scripts/summerfruit256.vim'
+Plugin 'jnurmine/Zenburn'
 
 " Golang
 Bundle 'jnwhiteh/vim-golang'
